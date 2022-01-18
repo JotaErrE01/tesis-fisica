@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import homeSvg from '../svgs/home.svg';
+import videoSvg from '../svgs/video.svg';
+import gameSvg from '../svgs/game.svg';
 
 interface Props {
   visible: boolean;
@@ -36,7 +39,7 @@ export const Aside = ({ setVisible, visible }: Props) => {
             <button
               className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-end gap-5 justify-center"
             >
-              <img className="w-8 sm:w-10" src="/src/assets/home.svg" alt="Game ICO" />
+              <img className="w-8 sm:w-10" src={homeSvg} alt="Home ICO" />
 
               <span
                 className="w-2/5 text-left text-2xl sm:text-3xl"
@@ -48,7 +51,7 @@ export const Aside = ({ setVisible, visible }: Props) => {
             <button
               className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-center gap-5 justify-center"
             >
-              <img className="w-8 sm:w-10" src="/src/assets/video.svg" alt="Game ICO" />
+              <img className="w-8 sm:w-10" src={videoSvg} alt="Video ICO" />
 
               <span
                 className="h-8 w-2/5 text-left text-2xl sm:text-3xl"
@@ -60,7 +63,7 @@ export const Aside = ({ setVisible, visible }: Props) => {
             <button
               className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-center gap-5 justify-center"
             >
-              <img className="invert w-8 sm:w-10" src="/src/assets/games.svg" alt="Game ICO" />
+              <img className="invert w-8 sm:w-10" src={gameSvg} alt="Game ICO" />
 
               <span
                 className="h-8 w-2/5 text-left text-2xl sm:text-3xl"
@@ -68,8 +71,6 @@ export const Aside = ({ setVisible, visible }: Props) => {
             </button>
           </li>
         </ul>
-
-
       </div>
 
 
