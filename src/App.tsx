@@ -20,15 +20,16 @@ function App() {
       }
 
       <div
-        className="rounded-full hover:cursor-pointer"
-        onClick={() => {
-          setVisible(true);
-        }}
+        className="rounded-full"
       >
         <img
-          className="rounded-full border-2 border-orange-500 w-12 ml-5 mt-5"
+          className="hover:cursor-pointer rounded-full border-2 border-orange-500 w-12 ml-5 mt-5"
           src={atomSvg}
-          alt="Atom" />
+          onClick={() => {
+            setVisible(true);
+          }}
+          alt="Atom" 
+        />
       </div>
 
       {/* <h1>Hello World</h1> */}
