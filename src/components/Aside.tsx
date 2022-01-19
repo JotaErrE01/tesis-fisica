@@ -37,7 +37,7 @@ export const Aside = ({ setVisible, visible }: Props) => {
         <ul className="flex flex-col justify-center gap-5">
           <li className="outline-2 outline outline-white">
             <button
-              className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-end gap-5 justify-center"
+              className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-end gap-5 justify-center transition-all duration-300 ease-in-out"
             >
               <img className="w-8 sm:w-10" src={homeSvg} alt="Home ICO" />
 
@@ -49,7 +49,7 @@ export const Aside = ({ setVisible, visible }: Props) => {
 
           <li className="outline-2 outline outline-white">
             <button
-              className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-center gap-5 justify-center"
+              className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-center gap-5 justify-center transition-all duration-300 ease-in-out"
             >
               <img className="w-8 sm:w-10" src={videoSvg} alt="Video ICO" />
 
@@ -61,7 +61,7 @@ export const Aside = ({ setVisible, visible }: Props) => {
 
           <li className="outline-2 outline outline-white">
             <button
-              className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-center gap-5 justify-center"
+              className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-center gap-5 justify-center transition-all duration-300 ease-in-out"
             >
               <img className="invert w-8 sm:w-10" src={gameSvg} alt="Game ICO" />
 
@@ -72,8 +72,6 @@ export const Aside = ({ setVisible, visible }: Props) => {
           </li>
         </ul>
       </div>
-
-
     </div>
   )
 }
