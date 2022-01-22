@@ -1,34 +1,23 @@
 import { NavLink } from "react-router-dom"
+import { routes } from '../routes/routes';
 
 
 export const NavBar = () => {
   return (
     <div className="container mx-auto mt-2 pr-2">
         <ul className="p-5 text-2xl font-semibold flex justify-evenly flex-wrap gap-5  border-4 border-indigo-600 shadow-sm shadow-indigo-500 rounded-xl">
-          <NavLink
-            className={({ isActive }) => `hover:text-purple-600 ${isActive && "text-purple-600" }`}
-            to="/unidades/1"
-          >Unidad 1</NavLink>
-          <NavLink
-            className={({ isActive }) => `hover:text-purple-600 ${isActive && "text-purple-600"}`}
-            to="/unidades/2"
-          >Unidad 2</NavLink>
-          <NavLink
-            className={({ isActive }) => `hover:text-purple-600 ${isActive && "text-purple-600"}`}
-            to="/unidades/3"
-          >Unidad 3</NavLink>
-          <NavLink
-            className={({ isActive }) => `hover:text-purple-600 ${isActive && "text-purple-600"}`}
-            to="/unidades/4"
-          >Unidad 4</NavLink>
-          <NavLink
-            className={({ isActive }) => `hover:text-purple-600 ${isActive && "text-purple-600"}`}
-            to="/unidades/5"
-          >Unidad 5</NavLink>
-          <NavLink
-            className={({ isActive }) => `hover:text-purple-600 ${isActive && "text-purple-600"}`}
-            to="/unidades/6"
-          >Unidad 6</NavLink>
+          {
+            routes.map( ({ name, to }) => (
+              <li
+                key={to}
+              >
+                <NavLink 
+                  to={to} 
+                  className={({ isActive }) => `hover:text-purple-600 ${isActive && "text-purple-600" }`}
+                >{name}</NavLink>
+              </li>
+            ) )
+          }
         </ul>
       </div>     
   )

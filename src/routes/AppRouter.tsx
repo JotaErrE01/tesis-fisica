@@ -1,18 +1,14 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import DashboardRoutes from './DashboardRoutes';
-import { Unidad1 } from '../pages/unidades/Unidad1';
 
 
 export const AppRouter = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route path="/*" element={<DashboardRoutes />} />
-
-        <Route path="videos" element={<Unidad1 />} >
-          <Route path=":id" element={<Unidad1 />} />
-        </Route>
+        <Route path="inicio" element={<h1>Caratula Inicio</h1>} />
       </Routes>
-    </Router >
+    </BrowserRouter>
   )
 }

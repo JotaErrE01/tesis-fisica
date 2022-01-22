@@ -3,7 +3,7 @@ import { Aside } from './Aside';
 import { NavBar } from './Navbar';
 import atomSvg from '../svgs/atom-svgrepo-com.svg';
 
-export const Navigation = () => {
+export const NavigationLayout = () => {
 
   const [visible, setVisible] = useState(false);
 
@@ -31,8 +31,6 @@ export const Navigation = () => {
             alt="Atom"
           />
         </div>
-
-        {/* <h1>Hello World</h1> */}
 
         <div className="flex-1">
           <NavBar />

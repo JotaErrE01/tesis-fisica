@@ -1,0 +1,1 @@
+export { TiposFuerza } from './TiposFuerza';

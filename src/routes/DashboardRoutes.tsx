@@ -1,21 +1,21 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { Unidad1 } from '../pages/unidades/Unidad1';
-import { Navigation } from '../components/Navigation';
+import { NavigationLayout } from '../components/NavigationLayout';
+import { routes } from './routes';
 
 function DashboardRoutes() {
+
   return (
     <>
-      <Navigation />
-
+      <NavigationLayout />
       <Routes>
-        <Route path="unidades/1" element={<Unidad1 />} />
-        <Route path="unidades/2" element={<Unidad1 />} />
-        <Route path="unidades/3" element={<Unidad1 />} />
-        <Route path="unidades/4" element={<Unidad1 />} />
-        <Route path="unidades/5" element={<Unidad1 />} />
-        <Route path="unidades/6" element={<Unidad1 />} />
-        <Route path="video/:id" element={<Unidad1 />} />
-        <Route path="*" element={<Navigate to="unidades/1" replace />} />
+        {
+          routes.map(({ path, Component, topics }) => (
+            <Route key={path} path={path} element={<Component topics={topics} />} />
+          ))
+        }
+        <Route path="video/:id" element={<h1>videos</h1>} />
+        <Route path="juego/:id" element={<h1>juegos</h1>} />
+        <Route path="*" element={<Navigate to="/unidad/1" replace />} />
       </Routes>
     </>
   )
