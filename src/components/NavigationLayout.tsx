@@ -23,12 +23,12 @@ export const NavigationLayout = () => {
           className="rounded-full"
         >
           <img
-            className="hover:cursor-pointer rounded-full border-2 border-orange-500 w-12 ml-5 mt-5"
+            className="hover:cursor-pointer rounded-full border-2 border-orange-500 w-12 ml-5 mt-5 shadow-md shadow-gray-600"
             src={atomSvg}
             onClick={() => {
               setVisible(true);
             }}
-            alt="Atom"
+            alt="Atomo"
           />
         </div>
 

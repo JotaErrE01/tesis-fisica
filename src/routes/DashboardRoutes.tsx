@@ -9,8 +9,8 @@ function DashboardRoutes() {
       <NavigationLayout />
       <Routes>
         {
-          routes.map(({ path, Component, topics }) => (
-            <Route key={path} path={path} element={<Component topics={topics} />} />
+          routes.map(({ path, Component, topics, iframe }) => (
+            <Route key={path} path={path} element={<Component topics={topics} iframe={iframe} />} />
           ))
         }
         <Route path="video/:id" element={<h1>videos</h1>} />

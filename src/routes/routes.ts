@@ -1,20 +1,36 @@
 import { UnidadComponent } from '../pages/unidades/UnidadComponent';
-import { 
+import { JuegosComponent } from '../pages/juegos/JuegosComponent';
+
+import {
     MovimientoPerpendiculares, 
     MRUPerpendicular, 
-    MovimientoCircular 
-} from '../pages/unidades/unidad1';
-import { 
+    MovimientoCircular,
     TiposFuerza,
-} from '../pages/unidades/unidad2';
+    InteraccionContacto,
+    EnergiaPotencial,
+    EnergiaMecanica,
+    DilatacionTermica,
+    ProcesoTermodinamico,
+    CorrienteElectrica,
+    LeyOHM,
+    MovimientoVibratorio,
+    EnergiaCinetica,
+} from '../pages/unidades';
 
 
 interface Routes {
+    id: string;
     path: string;
     to: string;
-    Component: (props: { topics: Topics[] }) => JSX.Element;
+    Component: (props: ComponentProps) => JSX.Element;
     name: string;
     topics: Topics[];
+    iframe?: string;
+}
+
+interface ComponentProps {
+    topics: Topics[];
+    iframe: string | undefined;
 }
 
 export interface Topics {
@@ -35,6 +51,7 @@ export interface Topics {
 
 export const routes: Routes[] = [
     {
+        id: 'unidad',
         path: 'unidad/1/*',
         to: "/unidad/1",
         Component: UnidadComponent,
@@ -61,6 +78,7 @@ export const routes: Routes[] = [
         ]
     },
     {
+        id: 'unidad',
         path: 'unidad/2/*',
         to: "/unidad/2",
         Component: UnidadComponent,
@@ -76,43 +94,119 @@ export const routes: Routes[] = [
                 topic: 'Interacciones de contacto',
                 path: 'interacciones-de-contacto',
                 to: "/unidad/2/interacciones-de-contacto",
-                Component: MovimientoPerpendiculares
+                Component: InteraccionContacto,
             }
         ]
     },
     {
+        id: 'unidad',
         path: 'unidad/3/*',
         to: "/unidad/3",
         Component: UnidadComponent,
         name: 'Unidad 3',
         topics: [
             {
-                topic: 'Composición de dos MRU Perpendiculares',
-                path: 'mru-perpendicular',
-                to: "/unidad/3/mru-perpendicular",
-                Component: MovimientoPerpendiculares,
+                topic: 'Energía Potencial',
+                path: 'mru-energiaPotencial',
+                to: "/unidad/3/mru-energiaPotencial",
+                Component: EnergiaPotencial,
+            },
+            {
+                topic: 'Energía Mecánica',
+                path: 'mru-energiaMecanica',
+                to: "/unidad/3/mru-energiaMecanica",
+                Component: EnergiaMecanica,
             },
         ]
     },
     {
+        id: 'unidad',
         path: 'unidad/4/*',
         to: "/unidad/4",
-        Component: MovimientoPerpendiculares,
+        Component: UnidadComponent,
         name: 'Unidad 4',
-        topics: []
+        topics: [
+            {
+                topic: 'Dilatación Térmica',
+                path: 'mru-dilatacionTermica',
+                to: "/unidad/4/mru-dilatacionTermica",
+                Component: DilatacionTermica,
+            },
+            {
+                topic: 'Espontaneidad y Procesos Termodinámicos',
+                path: 'mru-procesosTermodinamicos',
+                to: "/unidad/4/mru-procesosTermodinamicos",
+                Component: ProcesoTermodinamico,
+            },
+        ]
     },
     {
+        id: 'unidad',
         path: 'unidad/5/*',
         to: "/unidad/5",
-        Component: MovimientoPerpendiculares,
+        Component: UnidadComponent,
         name: 'Unidad 5',
-        topics: []
+        topics: [
+            {
+                topic: 'Corriente Eléctrica',
+                path: 'mru-corrienteElectrica',
+                to: "/unidad/5/mru-corrienteElectrica",
+                Component: CorrienteElectrica,
+            },
+            {
+                topic: 'Ley de OHM',
+                path: 'mru-leyOHM',
+                to: "/unidad/5/mru-leyOHM",
+                Component: LeyOHM,
+            },
+        ]
     },
     {
+        id: 'unidad',
         path: 'unidad/6/*',
         to: "/unidad/6",
-        Component: MovimientoPerpendiculares,
+        Component: UnidadComponent,
         name: 'Unidad 6',
-        topics: []
+        topics: [
+            {
+                topic: 'Movimiento Vibratorio Armónico Simple',
+                path: 'mru-movimientoVibratorio',
+                to: "/unidad/6/mru-movimientoVibratorio",
+                Component: MovimientoVibratorio,
+            },
+            {
+                topic: 'Energía Cinética',
+                path: 'mru-energiaCinetica',
+                to: "/unidad/6/mru-energiaCinetica",
+                Component: EnergiaCinetica,
+            },
+        ]
+    },
+    {
+        id: 'juegos',
+        path: 'juegos/1',
+        to: "/juegos/1",
+        Component: JuegosComponent,
+        name: 'Juego 1',
+        topics: [],
+        iframe: ''
+    },
+    {
+        id: 'juegos',
+        path: 'juegos/2',
+        to: "/juegos/2",
+        Component: JuegosComponent,
+        name: 'Juego 2',
+        topics: [],
+        iframe: ''
+    },
+    {
+        id: 'juegos',
+        path: 'juegos/3',
+        to: "/juegos/3",
+        Component: JuegosComponent,
+        name: 'Juego 3',
+        topics: [],
+        iframe: ''
     },
 ]

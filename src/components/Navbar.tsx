@@ -1,13 +1,17 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
 import { routes } from '../routes/routes';
 
 
 export const NavBar = () => {
+
+  const location = useLocation();  
+
   return (
     <div className="container mx-auto mt-2 pr-2">
         <ul className="p-5 text-2xl font-semibold flex justify-evenly flex-wrap gap-5  border-4 border-indigo-600 shadow-sm shadow-indigo-500 rounded-xl">
           {
-            routes.map( ({ name, to }) => (
+            routes.map( ({ id, name, to }) => (
+              id === location.pathname.split('/')[1] &&
               <li
                 key={to}
               >

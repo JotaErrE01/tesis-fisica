@@ -2,6 +2,7 @@ import { useState } from 'react';
 import homeSvg from '../svgs/home.svg';
 import videoSvg from '../svgs/video.svg';
 import gameSvg from '../svgs/game.svg';
+import { useNavigate } from 'react-router-dom';
 
 interface Props {
   visible: boolean;
@@ -12,6 +13,19 @@ interface Props {
 export const Aside = ({ setVisible, visible }: Props) => {
 
   const [animationRuning, setAnimationRuning] = useState(visible);
+  const navigate = useNavigate();
+
+  const closeAside = () => {
+    setAnimationRuning(false);
+    setTimeout(() => {
+      setVisible(false);
+    }, 1000);
+  }
+
+  const handleClick = (route: string) => {
+    closeAside();
+    navigate(route);
+  }
 
   return (
     <div
@@ -20,12 +34,7 @@ export const Aside = ({ setVisible, visible }: Props) => {
       <div className="flex flex-col h-full">
         <div
           className="flex justify-end hover:cursor-pointer w-fit ml-auto mr-5 mt-5"
-          onClick={() => {
-            setAnimationRuning(false);
-            setTimeout(() => {
-              setVisible(false);
-            }, 1000);
-          }}
+          onClick={closeAside}
         >
           <i className="fas fa-times text-white text-3xl m-0"></i>
         </div>
@@ -38,6 +47,7 @@ export const Aside = ({ setVisible, visible }: Props) => {
           <li className="outline-2 outline outline-white">
             <button
               className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-end gap-5 justify-center transition-all duration-300 ease-in-out"
+              onClick={() => handleClick('/')}
             >
               <img className="w-8 sm:w-10" src={homeSvg} alt="Home ICO" />
 
@@ -50,6 +60,7 @@ export const Aside = ({ setVisible, visible }: Props) => {
           <li className="outline-2 outline outline-white">
             <button
               className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-center gap-5 justify-center transition-all duration-300 ease-in-out"
+              onClick={() => { handleClick('/juegos/1') }}
             >
               <img className="w-8 sm:w-10" src={videoSvg} alt="Video ICO" />
 
@@ -62,6 +73,7 @@ export const Aside = ({ setVisible, visible }: Props) => {
           <li className="outline-2 outline outline-white">
             <button
               className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-center gap-5 justify-center transition-all duration-300 ease-in-out"
+              onClick={() => { handleClick('/juegos/1') }}
             >
               <img className="invert w-8 sm:w-10" src={gameSvg} alt="Game ICO" />
 
