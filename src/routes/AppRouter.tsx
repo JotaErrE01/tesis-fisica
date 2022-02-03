@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Home } from '../pages/Home';
 import DashboardRoutes from './DashboardRoutes';
 
 
@@ -6,8 +7,8 @@ export const AppRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/*" element={<DashboardRoutes />} />
-        <Route path="inicio" element={<h1>Caratula Inicio</h1>} />
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<DashboardRoutes />} />
       </Routes>
     </BrowserRouter>
   )

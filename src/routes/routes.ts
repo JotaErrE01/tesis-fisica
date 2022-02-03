@@ -189,7 +189,7 @@ export const routes: Routes[] = [
         Component: JuegosComponent,
         name: 'Juego 1',
         topics: [],
-        iframe: ''
+        iframe: '1'
     },
     {
         id: 'juegos',
@@ -198,7 +198,7 @@ export const routes: Routes[] = [
         Component: JuegosComponent,
         name: 'Juego 2',
         topics: [],
-        iframe: ''
+        iframe: '2'
     },
     {
         id: 'juegos',
@@ -207,6 +207,6 @@ export const routes: Routes[] = [
         Component: JuegosComponent,
         name: 'Juego 3',
         topics: [],
-        iframe: ''
+        iframe: '3'
     },
 ]

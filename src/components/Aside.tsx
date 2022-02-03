@@ -47,7 +47,7 @@ export const Aside = ({ setVisible, visible }: Props) => {
           <li className="outline-2 outline outline-white">
             <button
               className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-end gap-5 justify-center transition-all duration-300 ease-in-out"
-              onClick={() => handleClick('/')}
+              onClick={() => handleClick('/unidad/1')}
             >
               <img className="w-8 sm:w-10" src={homeSvg} alt="Home ICO" />
 

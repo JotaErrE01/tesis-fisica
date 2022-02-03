@@ -14,7 +14,7 @@ export const TopicsAside = ({ topics }: Props) => {
   return (
     <>
       <div
-        className={`p-5 fixed ${visible ? 'block' : 'hidden'} lg:block lg:relative rounded sm:flex-[0_0_25%] max-w-full bg-indigo-500 lg:bg-white lg:text-black lg:border-emerald-600 lg:border-2 text-white top-0 bottom-0 left-0 right-0 mb-5 h-full lg:h-auto`}
+        className={`p-5 fixed ${visible ? 'block' : 'hidden'} lg:block lg:relative rounded sm:flex-[0_0_25%] max-w-full bg-indigo-500 lg:bg-transparent lg:text-black lg:border-emerald-600 lg:border-2 text-white top-0 bottom-0 left-0 right-0 mb-5 h-full lg:h-auto`}
       >
         <div className="h-3/5 lg:h-1/2">
           <h3
