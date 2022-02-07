@@ -8,7 +8,7 @@ export const NavBar = () => {
 
   return (
     <div className="container mx-auto mt-2 pr-2">
-        <ul className="p-5 text-2xl font-semibold flex justify-evenly flex-wrap gap-5  border-4 border-indigo-600 shadow-sm shadow-indigo-500 rounded-xl">
+        <ul className="p-5 text-xl md:text-2xl font-semibold flex justify-evenly flex-wrap gap-5  border-4 border-indigo-600 shadow-sm shadow-indigo-500 rounded-xl">
           {
             routes.map( ({ id, name, to }) => (
               id === location.pathname.split('/')[1] &&

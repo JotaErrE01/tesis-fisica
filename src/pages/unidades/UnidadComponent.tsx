@@ -1,13 +1,10 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
 import { TopicsAside } from '../../components/TopicsAside';
-import { Topics } from '../../routes/routes';
+import { Topics, ComponentProps } from '../../routes/routes';
 import { Fragment } from 'react';
 
-interface Props {
-  topics: Topics[]
-}
 
-export const UnidadComponent = ({ topics }: Props) => {  
+export const UnidadComponent = ({ topics }: ComponentProps) => {  
 
   return (
     <div

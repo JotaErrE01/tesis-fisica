@@ -29,7 +29,7 @@ export const Aside = ({ setVisible, visible }: Props) => {
 
   return (
     <div
-      className={`h-screen w-[15rem] sm:w-[20rem] rounded-tr-lg rounded-br-lg bg-indigo-500 fixed animate__animated animate__slideInLeft ${!animationRuning ? 'animate__slideOutLeft' : ''} `}
+      className={`h-screen z-10 w-[15rem] sm:w-[20rem] rounded-tr-lg rounded-br-lg bg-indigo-500 fixed animate__animated animate__slideInLeft ${!animationRuning ? 'animate__slideOutLeft' : ''} `}
     >
       <div className="flex flex-col h-full">
         <div
@@ -44,7 +44,7 @@ export const Aside = ({ setVisible, visible }: Props) => {
         </div>
 
         <ul className="flex flex-col justify-center gap-5">
-          <li className="outline-2 outline outline-white">
+          <li className="border-2 border-solid border-white border-l-0 border-r-0">
             <button
               className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-end gap-5 justify-center transition-all duration-300 ease-in-out"
               onClick={() => handleClick('/unidad/1')}
@@ -57,7 +57,7 @@ export const Aside = ({ setVisible, visible }: Props) => {
             </button>
           </li>
 
-          <li className="outline-2 outline outline-white">
+          <li className="border-2 border-solid border-white border-l-0 border-r-0">
             <button
               className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-center gap-5 justify-center transition-all duration-300 ease-in-out"
               onClick={() => { handleClick('/juegos/1') }}
@@ -70,7 +70,7 @@ export const Aside = ({ setVisible, visible }: Props) => {
             </button>
           </li>
 
-          <li className="outline-2 outline outline-white">
+          <li className="border-2 border-solid border-white border-l-0 border-r-0">
             <button
               className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-center gap-5 justify-center transition-all duration-300 ease-in-out"
               onClick={() => { handleClick('/juegos/1') }}

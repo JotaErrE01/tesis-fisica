@@ -25,12 +25,14 @@ interface Routes {
     Component: (props: ComponentProps) => JSX.Element;
     name: string;
     topics: Topics[];
-    iframe?: string;
+    iframe: string | null;
+    title?: string;
 }
 
-interface ComponentProps {
+export interface ComponentProps {
     topics: Topics[];
-    iframe: string | undefined;
+    iframe: string | null;
+    title?: string;
 }
 
 export interface Topics {
@@ -56,6 +58,7 @@ export const routes: Routes[] = [
         to: "/unidad/1",
         Component: UnidadComponent,
         name: 'Unidad 1',
+        iframe: null,
         topics: [
             {
                 topic: 'Composicion de Movimiento Perpendiculares',
@@ -83,6 +86,7 @@ export const routes: Routes[] = [
         to: "/unidad/2",
         Component: UnidadComponent,
         name: 'Unidad 2',
+        iframe: null,
         topics: [
             {
                 topic: 'Tipos de Fuerza',
@@ -104,6 +108,7 @@ export const routes: Routes[] = [
         to: "/unidad/3",
         Component: UnidadComponent,
         name: 'Unidad 3',
+        iframe: null,
         topics: [
             {
                 topic: 'Energía Potencial',
@@ -125,6 +130,7 @@ export const routes: Routes[] = [
         to: "/unidad/4",
         Component: UnidadComponent,
         name: 'Unidad 4',
+        iframe: null,
         topics: [
             {
                 topic: 'Dilatación Térmica',
@@ -146,6 +152,7 @@ export const routes: Routes[] = [
         to: "/unidad/5",
         Component: UnidadComponent,
         name: 'Unidad 5',
+        iframe: null,
         topics: [
             {
                 topic: 'Corriente Eléctrica',
@@ -167,6 +174,7 @@ export const routes: Routes[] = [
         to: "/unidad/6",
         Component: UnidadComponent,
         name: 'Unidad 6',
+        iframe: null,
         topics: [
             {
                 topic: 'Movimiento Vibratorio Armónico Simple',
@@ -187,18 +195,20 @@ export const routes: Routes[] = [
         path: 'juegos/1',
         to: "/juegos/1",
         Component: JuegosComponent,
-        name: 'Juego 1',
-        topics: [],
-        iframe: '1'
+        name: 'Froggy Saltarín',
+        topics: [ ],
+        iframe: 'https://www.educaplay.com/game/11353591-fisica_quiz.html',
+        title: 'Ayuda a Froggy a Cruzar a Salvo 🐸'
     },
     {
         id: 'juegos',
         path: 'juegos/2',
         to: "/juegos/2",
         Component: JuegosComponent,
-        name: 'Juego 2',
+        name: 'Crucigrama',
         topics: [],
-        iframe: '2'
+        iframe: 'https://www.educaplay.com/game/11373002-crucigrama.html',
+        title: 'Completa el Crucigrama 🤔'
     },
     {
         id: 'juegos',

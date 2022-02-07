@@ -9,32 +9,33 @@ export const NavigationLayout = () => {
 
   return (
     <div
-        className="flex gap-5"
+      className="flex gap-5"
+    >
+      {
+        visible &&
+        <Aside
+          setVisible={setVisible}
+          visible={visible}
+        />
+      }
+
+      <div
+        id="ico"
+        className="rounded-full ml-5 mt-5 animate__animated animate__shakeX animate__slow"
       >
-        {
-          visible &&
-          <Aside
-            setVisible={setVisible}
-            visible={visible}
-          />
-        }
-
-        <div
-          className="rounded-full"
-        >
-          <img
-            className="hover:cursor-pointer rounded-full border-2 border-orange-500 w-12 ml-5 mt-5 shadow-md shadow-gray-600"
-            src={atomSvg}
-            onClick={() => {
-              setVisible(true);
-            }}
-            alt="Atomo"
-          />
-        </div>
-
-        <div className="flex-1">
-          <NavBar />
-        </div>
+        <img
+          className="hover:cursor-pointer w-10 rotate-180"
+          src={'https://www.svgrepo.com/show/45548/magnet.svg'}
+          onClick={() => {
+            setVisible(true);
+          }}
+          alt="Atomo"
+        />
       </div>
+
+      <div className="flex-1">
+        <NavBar />
+      </div>
+    </div>
   )
 }
