@@ -15,7 +15,7 @@ function DashboardRoutes() {
         }
         <Route path="video/:id" element={<h1>videos</h1>} />
         <Route path="juego/:id" element={<h1>juegos</h1>} />
-        <Route path="*" element={<Navigate to="/unidad/1" replace />} />
+        <Route path="*" element={<Navigate to="/inicio" replace />} />
       </Routes>
     </>
   )

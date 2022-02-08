@@ -2,6 +2,7 @@ import { useState } from 'react';
 import homeSvg from '../svgs/home.svg';
 import videoSvg from '../svgs/video.svg';
 import gameSvg from '../svgs/game.svg';
+import book from '../svgs/books-svgrepo-com.svg';
 import { useNavigate } from 'react-router-dom';
 
 interface Props {
@@ -47,9 +48,22 @@ export const Aside = ({ setVisible, visible }: Props) => {
           <li className="border-2 border-solid border-white border-l-0 border-r-0">
             <button
               className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-end gap-5 justify-center transition-all duration-300 ease-in-out"
-              onClick={() => handleClick('/unidad/1')}
+              onClick={() => handleClick('/inicio')}
             >
               <img className="w-8 sm:w-10" src={homeSvg} alt="Home ICO" />
+
+              <span
+                className="w-2/5 text-left text-2xl sm:text-3xl"
+              >Inicio</span>
+            </button>
+          </li>
+
+          <li className="border-2 border-solid border-white border-l-0 border-r-0">
+            <button
+              className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-end gap-5 justify-center transition-all duration-300 ease-in-out"
+              onClick={() => handleClick('/unidad/1')}
+            >
+              <img className="w-8 sm:w-10 invert" src={book} alt="Home ICO" />
 
               <span
                 className="w-2/5 text-left text-2xl sm:text-3xl"
@@ -63,7 +77,6 @@ export const Aside = ({ setVisible, visible }: Props) => {
               onClick={() => { handleClick('/juegos/1') }}
             >
               <img className="w-8 sm:w-10" src={videoSvg} alt="Video ICO" />
-
               <span
                 className="h-8 w-2/5 text-left text-2xl sm:text-3xl"
               >Videos</span>

@@ -16,6 +16,7 @@ import {
     MovimientoVibratorio,
     EnergiaCinetica,
 } from '../pages/unidades';
+import { Home } from '../pages/Home';
 
 
 interface Routes {
@@ -52,6 +53,15 @@ export interface Topics {
 // }
 
 export const routes: Routes[] = [
+    {
+        id: 'inicio',
+        path: 'inicio',
+        to: "/inicio",
+        Component: Home,
+        name: '',
+        iframe: null,
+        topics: []
+    },
     {
         id: 'unidad',
         path: 'unidad/1/*',
@@ -196,7 +206,7 @@ export const routes: Routes[] = [
         to: "/juegos/1",
         Component: JuegosComponent,
         name: 'Froggy Saltarín',
-        topics: [ ],
+        topics: [],
         iframe: 'https://www.educaplay.com/game/11353591-fisica_quiz.html',
         title: 'Ayuda a Froggy a Cruzar a Salvo 🐸'
     },
@@ -215,8 +225,9 @@ export const routes: Routes[] = [
         path: 'juegos/3',
         to: "/juegos/3",
         Component: JuegosComponent,
-        name: 'Juego 3',
+        name: 'Juego de Memoria',
         topics: [],
-        iframe: '3'
+        iframe: 'https://www.educaplay.com/game/11377685-juego_de_memoria.html',
+        title: '¿Tienes Buena Memoria? 🧠'
     },
 ]

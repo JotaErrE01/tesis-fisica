@@ -1,40 +1,69 @@
-import { Typewriter, Cursor } from 'react-simple-typewriter';
-import { useNavigate } from 'react-router-dom';
-
 export const Home = () => {
-
-  const navigate = useNavigate();
-
   return (
-    <div className="h-screen">
-      <img className="w-4/5 sm:w-2/5 md:w-3/5 lg:w-2/5 m-auto fixed inset-0" src="./solarSystem.svg" alt="Solar System" />
+    <>
+      <h1
+        className="text-center text-4xl font-bold mb-5"
+      >Explora las Herramientas de Aprendizaje 👩‍🏫</h1>
+      <div className="flex flex-col gap-5 items-center mx-auto container mb-10">
+        <div className="rounded w-4/5 lg:w-[60%] flex mt-5 flex-col lg:flex-row hover:scale-110 transition-all duration-300 cursor-pointer">
+          <div className="border-cyan-600 border-8 p-4 lg:border-r-0 basis-1/4 rounded-l flex justify-center">
+            <img src="./edmodo.png" alt="Edmodo" />
+          </div>
 
-      <div className="flex items-center md:h-2/5 lg:h-full">
-        <div className="text-6xl mt-10 md:text-8xl lg:mt-0 lg:text-9xl ml-10 font-bold">
-          <h1 className="bg-clip-text text-transparent bg-gradient-to-t from-yellow-300 via-red-500 to-rose-600 font-karla relative z-1 hover:cursor-default">Física
-          </h1>
-          <span className="block bg-clip-text text-transparent bg-gradient-to-t from-yellow-300 via-red-500 to-rose-600 font-karla relative z-1 hover:cursor-default">
-            <Typewriter
-              words={['Juega', 'Aprende', 'Diviértete']}
-              loop={false}
-            />
-            <span
-              className="text-orange-500 font-bold"
-            >
-              <Cursor />
-            </span>
-          </span>
+          <p className="bg-cyan-600 text-white p-5 text-lg rounded-r basis-3/4">Edmodo es una plataforma tecnológica, social, educativa y gratuita que permite la comunicación entre los alumnos y los profesores en un entorno cerrado y privado a modo de microblogging, creado para un uso específico en educación media superior.</p>
+        </div>
+
+        <div className="flex gap-5 flex-wrap w-4/5 justify-center">
+          <div className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer">
+            <div className="border-amber-600 border-8 border-b-0 p-4 rounded-t flex justify-center">
+              <img
+                className="h-[8rem]"
+                src="./quizizz.png"
+                alt="Quizizz"
+              />
+            </div>
+
+            <p className="bg-amber-600 text-white p-5 text-lg basis-4/5 rounded-b">Quizizz es una empresa india de software educativo con sede en Bangalore, India, que crea y vende una plataforma de participación estudiantil gamificada.</p>
+          </div>
+
+          <div className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer">
+            <div className="border-purple-600 border-8 border-b-0 p-4 rounded-t flex justify-center">
+              <img
+                className="h-[8rem]"
+                src="./kahoot.png"
+                alt="Kahoot"
+              />
+            </div>
+
+            <p className="bg-purple-600 text-white p-5 text-lg basis-4/5 rounded-b">Kahoot! es una plataforma gratuita que permite la creación de cuestionarios de evaluación. Es una herramienta por la que el profesor crea concursos en el aula para aprender o reforzar el aprendizaje y donde los alumnos son los concursantes. </p>
+          </div>
+
+          <div className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer">
+            <div className="border-orange-600 border-8 border-b-0 p-4 rounded-t flex justify-center">
+              <img
+                className="h-[8rem]"
+                src="./classDojo.png"
+                alt="Quizizz"
+              />
+            </div>
+
+            <p className="bg-orange-600 text-white p-5 text-lg basis-4/5 rounded-b">ClassDojo es la plataforma de gestión del comportamiento de más rápido crecimiento en el mundo, utilizada por maestros, padres y estudiantes.​​​​</p>
+          </div>
+
+          <div className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer">
+            <div className="border-emerald-600 border-8 border-b-0 p-4 rounded-t flex justify-center">
+              <img
+                className="h-[8rem]"
+                src="./Google-lens.svg"
+                alt="Quizizz"
+              />
+            </div>
+
+            <p className="bg-emerald-600 text-white p-5 text-lg basis-4/5 rounded-b">Google Lens es una aplicación móvil de reconocimiento de imagen desarrollada por Google. Anunciada por primera vez durante el Google I/O 2017, está diseñada para mostrar información relevante usando análisis visual.​</p>
+          </div>
         </div>
       </div>
+    </>
 
-      <button
-        className="fixed bg-clip-text text-transparent bg-gradient-to-t from-yellow-400 via-orange-600 to-rose-600 border-2 border-orange-500 font-karla rounded px-5 py-2 hover:bg-clip-padding hover:border-none hover:via-orange-500 hover:text-white transition-all duration-300 ease-out  bottom-20 left-10 text-xl md:text-4xl lg:top-20 lg:right-20 lg:bottom-auto lg:left-auto"
-        onClick={() => {
-          navigate('/unidad/1');
-        }}
-      >Ingresar</button>
-
-      <img className="fixed bottom-0 right-0 w-[50%] sm:w-[25%] md:w-[30%] lg:w-[25%] -rotate-[40deg] lg:-rotate-[70deg]" src="./Rocket.svg" alt="Rocket" />
-    </div>
   )
-}
+};

@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { Aside } from './Aside';
 import { NavBar } from './Navbar';
-import atomSvg from '../svgs/atom-svgrepo-com.svg';
+import { useLocation } from 'react-router-dom';
 
 export const NavigationLayout = () => {
 
   const [visible, setVisible] = useState(false);
+  const { pathname } = useLocation();
+  
 
   return (
     <div
@@ -33,7 +35,7 @@ export const NavigationLayout = () => {
         />
       </div>
 
-      <div className="flex-1">
+      <div className={`flex-1 ${ pathname.split('/')[1] === 'inicio' && 'hidden' }`}>
         <NavBar />
       </div>
     </div>
