@@ -30,7 +30,7 @@ export const FisicaApp = () => {
       <button
         className="fixed bg-clip-text text-transparent bg-gradient-to-t from-yellow-400 via-orange-600 to-rose-600 border-2 border-orange-500 font-karla rounded px-5 py-2 hover:bg-clip-padding hover:border-none hover:via-orange-500 hover:text-white transition-all duration-300 ease-out  bottom-20 left-10 text-xl md:text-4xl lg:top-20 lg:right-20 lg:bottom-auto lg:left-auto"
         onClick={() => {
-          navigate('/unidad/1');
+          navigate('/inicio');
         }}
       >Ingresar</button>
 
