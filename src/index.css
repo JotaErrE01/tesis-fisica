@@ -16,3 +16,9 @@ body{
     align-items: center;
     transform: scaley(-1);
 }
+
+@media (min-width: 768px) {
+    #ico{
+        display: none;
+    }
+}

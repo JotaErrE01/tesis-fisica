@@ -1,4 +1,4 @@
-import imgMOV from '/src/images/interaccinesContacto.png';
+
 
 export const InteraccionContacto = () => {
   return (
@@ -14,7 +14,7 @@ export const InteraccionContacto = () => {
           </p>
 
           <div className="flex-[30%] mb-5">
-            <img className="md:h-[15rem] h-auto mx-auto" src={imgMOV} alt="Interacciones de Contacto" />
+            <img className="md:h-[15rem] h-auto mx-auto" src='/interaccionContacto.png' alt="Interacciones de Contacto" />
           </div>
 
         </div>

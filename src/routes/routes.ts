@@ -43,15 +43,6 @@ export interface Topics {
     Component: () => JSX.Element;
 }
 
-// export const rot = {
-//     1: {
-//         path: 'unidad/1',
-//         to: "/unidad/1",
-//         Component: Unidad1,
-//         name: 'Unidad 1'
-//     },
-// }
-
 export const routes: Routes[] = [
     {
         id: 'inicio',

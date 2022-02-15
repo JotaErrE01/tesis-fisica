@@ -6,20 +6,24 @@ import { useLocation } from 'react-router-dom';
 export const NavigationLayout = () => {
 
   const [visible, setVisible] = useState(false);
+  const [animationRuning, setAnimationRuning] = useState(true);
   const { pathname } = useLocation();
-  
+  const currentPath = pathname.split('/')[1];
 
   return (
     <div
-      className="flex gap-5"
+      className="flex gap-5 md:flex-col md:gap-0"
     >
-      {
+
+      <Aside
+        setVisible={setVisible}
+        visible={visible}
+        animationRuning={animationRuning}
+        setAnimationRuning={setAnimationRuning}
+      />
+      {/* {
         visible &&
-        <Aside
-          setVisible={setVisible}
-          visible={visible}
-        />
-      }
+      } */}
 
       <div
         id="ico"
@@ -30,12 +34,13 @@ export const NavigationLayout = () => {
           src={'https://www.svgrepo.com/show/45548/magnet.svg'}
           onClick={() => {
             setVisible(true);
+            setAnimationRuning(false);
           }}
           alt="Atomo"
         />
       </div>
 
-      <div className={`flex-1 ${ pathname.split('/')[1] === 'inicio' && 'hidden' }`}>
+      <div className={`flex-1 ${ currentPath === 'inicio' || currentPath === 'glosario' ? 'hidden' : '' }`}>
         <NavBar />
       </div>
     </div>

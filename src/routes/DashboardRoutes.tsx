@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { NavigationLayout } from '../components/NavigationLayout';
 import { routes } from './routes';
+import { Glosario } from '../pages/Glosario';
 
 function DashboardRoutes() {
 
@@ -13,8 +14,7 @@ function DashboardRoutes() {
             <Route key={path} path={path} element={<Component topics={topics} iframe={iframe} title={title} />} />
           ))
         }
-        <Route path="video/:id" element={<h1>videos</h1>} />
-        <Route path="juego/:id" element={<h1>juegos</h1>} />
+        <Route path="glosario" element={<Glosario />} />
         <Route path="*" element={<Navigate to="/inicio" replace />} />
       </Routes>
     </>

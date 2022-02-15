@@ -1,6 +1,6 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
 import { TopicsAside } from '../../components/TopicsAside';
-import { Topics, ComponentProps } from '../../routes/routes';
+import { ComponentProps } from '../../routes/routes';
 import { Fragment } from 'react';
 
 

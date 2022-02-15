@@ -1,9 +1,13 @@
+import { useNavigate } from 'react-router-dom';
+
 export const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <h1
         className="text-center text-4xl font-bold mb-5"
-      >Explora las Herramientas de Aprendizaje 👩‍🏫</h1>
+      >Módulos de Herramientas para el Proceso de Aprendizaje 👩‍🏫</h1>
       <div className="flex flex-col gap-5 items-center mx-auto container mb-10">
         <div className="rounded w-4/5 lg:w-[60%] flex mt-5 flex-col lg:flex-row hover:scale-110 transition-all duration-300 cursor-pointer">
           <div className="border-cyan-600 border-8 p-4 lg:border-r-0 basis-1/4 rounded-l flex justify-center">
@@ -51,7 +55,7 @@ export const Home = () => {
           </div>
 
           <div className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer">
-            <div className="border-emerald-600 border-8 border-b-0 p-4 rounded-t flex justify-center">
+            <div className="border-green-600 border-8 border-b-0 p-4 rounded-t flex justify-center">
               <img
                 className="h-[8rem]"
                 src="./Google-lens.svg"
@@ -59,11 +63,27 @@ export const Home = () => {
               />
             </div>
 
-            <p className="bg-emerald-600 text-white p-5 text-lg basis-4/5 rounded-b">Google Lens es una aplicación móvil de reconocimiento de imagen desarrollada por Google. Anunciada por primera vez durante el Google I/O 2017, está diseñada para mostrar información relevante usando análisis visual.​</p>
+            <p className="bg-green-600 text-white p-5 text-lg basis-4/5 rounded-b">Google Lens es una aplicación móvil de reconocimiento de imagen desarrollada por Google. Anunciada por primera vez durante el Google I/O 2017, está diseñada para mostrar información relevante usando análisis visual.​</p>
+          </div>
+
+          <div 
+            className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer"
+            onClick={() => {
+              navigate('/glosario');
+            }}
+          >
+            <div className="border-sky-600 border-8 border-b-0 p-4 rounded-t flex justify-center">
+              <img
+                className="h-[8rem] w-[18rem]"
+                src="glosario.png"
+                alt="Glosario"
+              />
+            </div>
+
+            <p className="bg-sky-600 text-white p-5 text-lg basis-4/5 rounded-b">Encuentra la definicion de las palabras que desconoces en nuestro glosario.​</p>
           </div>
         </div>
       </div>
     </>
-
   )
 };

@@ -19,7 +19,7 @@ export const MovimientoPerpendiculares = () => {
         </p>
       </div>
 
-      <img src="https://i.ytimg.com/vi/77uz39gfjCg/maxresdefault.jpg" alt="" />
+      <img src="/fisicaSimplificada.png" alt="Fisica Imagen" />
     </div>
   )
 };

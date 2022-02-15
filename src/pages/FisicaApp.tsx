@@ -6,35 +6,45 @@ export const FisicaApp = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="h-screen">
-      <img className="w-4/5 sm:w-2/5 md:w-3/5 lg:w-2/5 m-auto fixed inset-0" src="./solarSystem.svg" alt="Solar System" />
+    <>
+      <a className="flex fixed z-20 bottom-5 right-10 gap-2" href="https://www.contadorvisitasgratis.com" title="contadores de visitas">
+        <p className="bg-clip-text text-transparent bg-gradient-to-t from-yellow-300 via-red-500 to-rose-600 font-karla relative z-1 hover:cursor-default text-xl font-bold">Visitas:</p>
+        <img className="" src="https://counter2.stat.ovh/private/contadorvisitasgratis.php?c=bhwkyxe2hhw532g2ey26eq9l8uu4ajd7" title="contadores de visitas" alt="contadores de visitas" />
+      </a>
 
-      <div className="flex items-center md:h-2/5 lg:h-full">
-        <div className="text-6xl mt-10 md:text-8xl lg:mt-0 lg:text-9xl ml-10 font-bold">
-          <h1 className="bg-clip-text text-transparent bg-gradient-to-t from-yellow-300 via-red-500 to-rose-600 font-karla relative z-1 hover:cursor-default">Física
-          </h1>
-          <span className="block bg-clip-text text-transparent bg-gradient-to-t from-yellow-300 via-red-500 to-rose-600 font-karla relative z-1 hover:cursor-default">
-            <Typewriter
-              words={['Juega', 'Aprende', 'Diviértete']}
-              loop={false}
-            />
-            <span
-              className="text-orange-500 font-bold"
-            >
-              <Cursor />
-            </span>
-          </span>
+      <div className="h-screen">
+        <img className="w-4/5 sm:w-2/5 md:w-3/5 lg:w-2/5 m-auto fixed inset-0" src="./solarSystem.svg" alt="Solar System" />
+        <div className='text-center fixed mx-auto left-0 right-0 top-5 font-semibold w-4/5'>
+          <h1 className='text-sm sm:text-2xl lg:text-4xl text-red-500 to-rose-600 font-karla'>Herramientas Web en el Proceso de Enseñanza y Aprendizaje en la Asignatura de Física</h1>
         </div>
+
+        <div className="flex items-center h-2/5 md:h-[70%] lg:h-full">
+          <div className="text-5xl mt-10 md:text-6xl lg:mt-0 lg:text-8xl ml-10 font-bold">
+            <h2 className="bg-clip-text text-transparent bg-gradient-to-t from-yellow-300 via-red-500 to-rose-600 font-karla relative z-1 hover:cursor-default">Física
+            </h2>
+            <span className="block bg-clip-text text-transparent bg-gradient-to-t from-yellow-300 via-red-500 to-rose-600 font-karla relative z-1 hover:cursor-default">
+              <Typewriter
+                words={['Juega', 'Aprende', 'Diviértete']}
+                loop
+              />
+              <span
+                className="text-orange-500 font-bold"
+              >
+                <Cursor />
+              </span>
+            </span>
+          </div>
+        </div>
+
+        <button
+          className="fixed bg-clip-text text-transparent bg-gradient-to-t from-yellow-400 via-orange-600 to-rose-600 border-2 border-orange-500 font-karla rounded px-5 py-2 hover:bg-clip-padding hover:border-none hover:via-orange-500 hover:text-white transition-all duration-300 ease-out  bottom-20 left-10 text-xl md:text-4xl lg:top-40 lg:right-20 lg:bottom-auto lg:left-auto"
+          onClick={() => {
+            navigate('/inicio');
+          }}
+        >Ingresar</button>
+
+        <img className="fixed bottom-0 right-0 w-[50%] sm:w-[25%] md:w-[30%] lg:w-[25%] -rotate-[40deg] lg:-rotate-[70deg]" src="./Rocket.svg" alt="Rocket" />
       </div>
-
-      <button
-        className="fixed bg-clip-text text-transparent bg-gradient-to-t from-yellow-400 via-orange-600 to-rose-600 border-2 border-orange-500 font-karla rounded px-5 py-2 hover:bg-clip-padding hover:border-none hover:via-orange-500 hover:text-white transition-all duration-300 ease-out  bottom-20 left-10 text-xl md:text-4xl lg:top-20 lg:right-20 lg:bottom-auto lg:left-auto"
-        onClick={() => {
-          navigate('/inicio');
-        }}
-      >Ingresar</button>
-
-      <img className="fixed bottom-0 right-0 w-[50%] sm:w-[25%] md:w-[30%] lg:w-[25%] -rotate-[40deg] lg:-rotate-[70deg]" src="./Rocket.svg" alt="Rocket" />
-    </div>
+    </>
   )
 }
