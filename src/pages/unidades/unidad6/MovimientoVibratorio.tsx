@@ -17,7 +17,7 @@ export const MovimientoVibratorio = () => {
           </div>
 
           <div className="basis-2/5">
-            <img className="rounded my-5 lg:my-0 h-full" src="https://i.ytimg.com/vi/6XAfS0lt9h4/maxresdefault.jpg" alt="Corriente" />
+            <img className="rounded my-5 lg:my-0 h-full" src="/mvPerpendicular.png" alt="Corriente" />
           </div>
         </div>
 

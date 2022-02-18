@@ -14,7 +14,7 @@ export const EnergiaCinetica = () => {
             </p>
 
             <div className="my-5 w-full">
-              <img className="rounded mx-auto lg:w-2/5" src="https://i.pinimg.com/originals/4a/03/81/4a0381dd278b42f3c94cbfcb4ece616b.png" alt="Corriente" />
+              <img className="rounded mx-auto lg:w-2/5" src="/energiaCinetica.png" alt="Corriente" />
             </div>
 
             <p>

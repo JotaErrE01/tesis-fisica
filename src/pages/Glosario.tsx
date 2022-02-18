@@ -11,7 +11,7 @@ export const Glosario = () => {
   }, []);
 
   return (
-    <div className="h-screen flex flex-col gap-10 mx-auto container">
+    <div className="flex flex-col gap-10 mx-auto container mb-10">
       <h1 className="text-4xl font-bold text-center">Glosario 📚</h1>
 
       <div className="flex flex-col gap-10 w-4/5 md:w-full mx-auto">

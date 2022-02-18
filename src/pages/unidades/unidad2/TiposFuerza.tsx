@@ -30,25 +30,25 @@ export const TiposFuerza = () => {
         <ul className="list-disc mb-5">
           <li>
             <p>
-              Interacción nuclear fuerte. Es la más intensa de las cuatro. Es atractiva y de alcance muy pequeño. Mantiene a los protones unidos en el núcleo a pesar de la repulsión electrostática.
+              <span className="font-bold">Interacción nuclear fuerte.</span> Es la más intensa de las cuatro. Es atractiva y de alcance muy pequeño. Mantiene a los protones unidos en el núcleo a pesar de la repulsión electrostática.
             </p>
           </li>
 
           <li>
             <p>
-              Interacción electromagnética. Es cien veces menor que la nuclear fuerte. Es atractiva o repulsiva, y de largo alcance. Es responsable de la impenetrabilidad de los objetos y de la estructura de átomos y moléculas, así como de todas las reacciones químicas y procesos biológicos.
+              <span className="font-bold">Interacción electromagnética.</span> Es cien veces menor que la nuclear fuerte. Es atractiva o repulsiva, y de largo alcance. Es responsable de la impenetrabilidad de los objetos y de la estructura de átomos y moléculas, así como de todas las reacciones químicas y procesos biológicos.
             </p>
           </li>
 
           <li>
             <p>
-              Interacción nuclear débil. Es 105 veces menor que la nuclear fuerte. Es responsable de la desintegración de algunos núcleos y de la producción de radiación calorífica de las estrellas.
+              <span className="font-bold">Interacción nuclear débil.</span> Es 105 veces menor que la nuclear fuerte. Es responsable de la desintegración de algunos núcleos y de la producción de radiación calorífica de las estrellas.
             </p>
           </li>
 
           <li>
             <p>
-              Interacción gravitatoria. Es 1039 veces menor que la nuclear fuerte. Se considera la más débil de todas. Es atractiva y de largo alcance, y responsable de la estructura del universo, de las mareas, del movimiento de los satélites artificiales.
+              <span className="font-bold">Interacción gravitatoria.</span> Es 1039 veces menor que la nuclear fuerte. Se considera la más débil de todas. Es atractiva y de largo alcance, y responsable de la estructura del universo, de las mareas, del movimiento de los satélites artificiales.
             </p>
           </li>
         </ul>

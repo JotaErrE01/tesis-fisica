@@ -18,7 +18,10 @@ export const Home = () => {
         </div>
 
         <div className="flex gap-5 flex-wrap w-4/5 justify-center">
-          <div className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer">
+          <div 
+            className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer"
+            onClick={() => window.open('https://quizizz.com/join/quiz/620c5e54351b6f001e3423e9/start?studentShare=true', '_blank')?.focus() }
+          >
             <div className="border-amber-600 border-8 border-b-0 p-4 rounded-t flex justify-center">
               <img
                 className="h-[8rem]"
@@ -30,7 +33,10 @@ export const Home = () => {
             <p className="bg-amber-600 text-white p-5 text-lg basis-4/5 rounded-b">Quizizz es una empresa india de software educativo con sede en Bangalore, India, que crea y vende una plataforma de participación estudiantil gamificada.</p>
           </div>
 
-          <div className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer">
+          <div 
+            className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer"
+            onClick={() => window.open('https://kahoot.it/challenge/05430138?challenge-id=932bcb07-5ede-4d4e-a16d-d911215a7775_1645067502156', '_blank')?.focus() }
+          >
             <div className="border-purple-600 border-8 border-b-0 p-4 rounded-t flex justify-center">
               <img
                 className="h-[8rem]"
@@ -42,16 +48,19 @@ export const Home = () => {
             <p className="bg-purple-600 text-white p-5 text-lg basis-4/5 rounded-b">Kahoot! es una plataforma gratuita que permite la creación de cuestionarios de evaluación. Es una herramienta por la que el profesor crea concursos en el aula para aprender o reforzar el aprendizaje y donde los alumnos son los concursantes. </p>
           </div>
 
-          <div className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer">
+          <div 
+            className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer"
+            onClick={() => window.open('https://b.socrative.com/teacher/#import-quiz/64635563', '_blank')?.focus() }
+          >
             <div className="border-orange-600 border-8 border-b-0 p-4 rounded-t flex justify-center">
               <img
                 className="h-[8rem]"
-                src="./classDojo.png"
-                alt="Quizizz"
+                src="socrative.svg"
+                alt="Socrative"
               />
             </div>
 
-            <p className="bg-orange-600 text-white p-5 text-lg basis-4/5 rounded-b">ClassDojo es la plataforma de gestión del comportamiento de más rápido crecimiento en el mundo, utilizada por maestros, padres y estudiantes.​​​​</p>
+            <p className="bg-orange-600 text-white p-5 text-lg basis-4/5 rounded-b">Socrative es una herramienta multimedia que permite crear encuestas y cuestionarios conociendo la respuesta de los alumnos en tiempo real a través de los ordenadores.</p>
           </div>
 
           <div className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer">
