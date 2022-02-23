@@ -74,7 +74,7 @@ export const Aside = ({ setVisible, visible, animationRuning, setAnimationRuning
           <li className="border-2 border-solid border-white border-x-0 md:border-y-0">
             <button
               className="bg-indigo-500 hover:bg-indigo-700 text-white w-full font-bold py-5 flex items-center gap-5 md:gap-2 justify-center transition-all duration-300 ease-in-out md:py-3 md:px-5"
-              onClick={() => { handleClick('/juegos/1') }}
+              onClick={() => { handleClick('/videos/1') }}
             >
               <img className="w-8 md:w-10" src={videoSvg} alt="Video ICO" />
               <span

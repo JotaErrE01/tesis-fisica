@@ -17,6 +17,7 @@ import {
     EnergiaCinetica,
 } from '../pages/unidades';
 import { Home } from '../pages/Home';
+import { VideosComponent } from '../pages/videos/VideosComponent';
 
 
 interface Routes {
@@ -27,14 +28,14 @@ interface Routes {
     name: string;
     mainTopic?: string;
     topics: Topics[];
-    iframe: string | null;
+    url: string | null;
     title?: string;
 }
 
 export interface ComponentProps {
     topics: Topics[];
     mainTopic?: string;
-    iframe: string | null;
+    url: string | null;
     title?: string;
 }
 
@@ -52,7 +53,7 @@ export const routes: Routes[] = [
         to: "/inicio",
         Component: Home,
         name: '',
-        iframe: null,
+        url: null,
         topics: []
     },
     {
@@ -62,7 +63,7 @@ export const routes: Routes[] = [
         Component: UnidadComponent,
         name: 'Unidad 1',
         mainTopic: 'El Movimiento',
-        iframe: null,
+        url: null,
         topics: [
             {
                 topic: 'Composicion de Movimiento Perpendiculares',
@@ -90,7 +91,7 @@ export const routes: Routes[] = [
         to: "/unidad/2",
         Component: UnidadComponent,
         name: 'Unidad 2',
-        iframe: null,
+        url: null,
         mainTopic: 'Fuerzas en la Naturaleza',
         topics: [
             {
@@ -113,7 +114,7 @@ export const routes: Routes[] = [
         to: "/unidad/3",
         Component: UnidadComponent,
         name: 'Unidad 3',
-        iframe: null,
+        url: null,
         mainTopic: 'Trabajo y energía',
         topics: [
             {
@@ -137,7 +138,7 @@ export const routes: Routes[] = [
         Component: UnidadComponent,
         name: 'Unidad 4',
         mainTopic: 'Termodinámica',
-        iframe: null,
+        url: null,
         topics: [
             {
                 topic: 'Dilatación Térmica',
@@ -160,7 +161,7 @@ export const routes: Routes[] = [
         Component: UnidadComponent,
         name: 'Unidad 5',
         mainTopic: 'Corriente Eléctrica',
-        iframe: null,
+        url: null,
         topics: [
             {
                 topic: 'Corriente Eléctrica',
@@ -183,7 +184,7 @@ export const routes: Routes[] = [
         Component: UnidadComponent,
         name: 'Unidad 6',
         mainTopic: 'Movimiento Armónico Simple',
-        iframe: null,
+        url: null,
         topics: [
             {
                 topic: 'Movimiento Vibratorio Armónico Simple',
@@ -200,13 +201,43 @@ export const routes: Routes[] = [
         ]
     },
     {
+        id: 'videos',
+        path: 'videos/1',
+        to: "/videos/1",
+        Component: VideosComponent,
+        topics: [],
+        name: 'Unidad 2',
+        title: 'Tipos de Fuerza',
+        url: 'https://www.youtube.com/embed/CDCNIL0Ozcg'
+    },
+    {
+        id: 'videos',
+        path: 'videos/2',
+        to: "/videos/2",
+        Component: VideosComponent,
+        topics: [],
+        name: 'Unidad 4',
+        title: 'Dilatación Térmica',
+        url: 'https://www.youtube.com/embed/CZSQZNyREU8'
+    },
+    {
+        id: 'videos',
+        path: 'videos/3',
+        to: "/videos/3",
+        Component: VideosComponent,
+        topics: [],
+        name: 'Unidad 6',
+        title: 'Movimiento Periódico',
+        url: 'https://www.youtube.com/embed/xCdLxIfPnAc'
+    },
+    {
         id: 'juegos',
         path: 'juegos/1',
         to: "/juegos/1",
         Component: JuegosComponent,
         name: 'Froggy Saltarín',
         topics: [],
-        iframe: 'https://www.educaplay.com/game/11353591-fisica_quiz.html',
+        url: 'https://www.educaplay.com/game/11353591-fisica_quiz.html',
         title: 'Ayuda a Froggy a Cruzar a Salvo 🐸'
     },
     {
@@ -216,7 +247,7 @@ export const routes: Routes[] = [
         Component: JuegosComponent,
         name: 'Crucigrama',
         topics: [],
-        iframe: 'https://www.educaplay.com/game/11373002-crucigrama.html',
+        url: 'https://www.educaplay.com/game/11373002-crucigrama.html',
         title: 'Completa el Crucigrama 🤔'
     },
     {
@@ -226,7 +257,7 @@ export const routes: Routes[] = [
         Component: JuegosComponent,
         name: 'Juego de Memoria',
         topics: [],
-        iframe: 'https://www.educaplay.com/game/11377685-juego_de_memoria.html',
+        url: 'https://www.educaplay.com/game/11377685-juego_de_memoria.html',
         title: '¿Tienes Buena Memoria? 🧠'
     },
 ]
