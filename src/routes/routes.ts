@@ -25,6 +25,7 @@ interface Routes {
     to: string;
     Component: (props: ComponentProps) => JSX.Element;
     name: string;
+    mainTopic?: string;
     topics: Topics[];
     iframe: string | null;
     title?: string;
@@ -32,6 +33,7 @@ interface Routes {
 
 export interface ComponentProps {
     topics: Topics[];
+    mainTopic?: string;
     iframe: string | null;
     title?: string;
 }
@@ -59,6 +61,7 @@ export const routes: Routes[] = [
         to: "/unidad/1",
         Component: UnidadComponent,
         name: 'Unidad 1',
+        mainTopic: 'El Movimiento',
         iframe: null,
         topics: [
             {
@@ -88,6 +91,7 @@ export const routes: Routes[] = [
         Component: UnidadComponent,
         name: 'Unidad 2',
         iframe: null,
+        mainTopic: 'Fuerzas en la Naturaleza',
         topics: [
             {
                 topic: 'Tipos de Fuerza',
@@ -110,6 +114,7 @@ export const routes: Routes[] = [
         Component: UnidadComponent,
         name: 'Unidad 3',
         iframe: null,
+        mainTopic: 'Trabajo y energía',
         topics: [
             {
                 topic: 'Energía Potencial',
@@ -131,6 +136,7 @@ export const routes: Routes[] = [
         to: "/unidad/4",
         Component: UnidadComponent,
         name: 'Unidad 4',
+        mainTopic: 'Termodinámica',
         iframe: null,
         topics: [
             {
@@ -153,6 +159,7 @@ export const routes: Routes[] = [
         to: "/unidad/5",
         Component: UnidadComponent,
         name: 'Unidad 5',
+        mainTopic: 'Corriente Eléctrica',
         iframe: null,
         topics: [
             {
@@ -175,6 +182,7 @@ export const routes: Routes[] = [
         to: "/unidad/6",
         Component: UnidadComponent,
         name: 'Unidad 6',
+        mainTopic: 'Movimiento Armónico Simple',
         iframe: null,
         topics: [
             {

@@ -9,7 +9,10 @@ export const Home = () => {
         className="text-center text-4xl font-bold mb-5"
       >Módulos de Herramientas para el Proceso de Aprendizaje 👩‍🏫</h1>
       <div className="flex flex-col gap-5 items-center mx-auto container mb-10">
-        <div className="rounded w-4/5 lg:w-[60%] flex mt-5 flex-col lg:flex-row hover:scale-110 transition-all duration-300 cursor-pointer">
+        <div 
+          className="rounded w-4/5 lg:w-[60%] flex mt-5 flex-col lg:flex-row hover:scale-110 transition-all duration-300 cursor-pointer"
+          onClick={() => { window.open('https://new.edmodo.com/joincg/ir8ysf', '_blank')?.focus(); }}
+        >
           <div className="border-cyan-600 border-8 p-4 lg:border-r-0 basis-1/4 rounded-l flex justify-center">
             <img src="./edmodo.png" alt="Edmodo" />
           </div>

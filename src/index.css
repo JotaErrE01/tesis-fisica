@@ -7,6 +7,10 @@ body{
     background-repeat: no-repeat;
 }
 
+#title{
+    text-shadow: #a78bfa 0px 1.25px 1.5px;
+}
+
 #ico{
     box-shadow: 0px 0px 10px #adadad inset;
     width: 4rem;
