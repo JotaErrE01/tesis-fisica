@@ -38,7 +38,7 @@ export interface ComponentProps {
     mainTopic?: string;
     url: string | null;
     title?: string;
-    gameDescription?: string;
+    // gameDescription?: string;
 }
 
 export interface Topics {
@@ -260,8 +260,7 @@ export const routes: Routes[] = [
         name: 'Froggy Saltarín',
         topics: [],
         url: 'https://www.educaplay.com/game/11353591-fisica_quiz.html',
-        title: 'Ayuda a Froggy a Cruzar a Salvo 🐸',
-        gameDescription: 'Este juego abarca las unidades: Unidad 1, Unidad 3, Unidad 4, Unidad 5'
+        title: 'Ayuda a Froggy a cruzar a salvo con lo aprendido en la unidad 1 y 2 🐸',
     },
     {
         id: 'juegos',
@@ -271,8 +270,7 @@ export const routes: Routes[] = [
         name: 'Crucigrama',
         topics: [],
         url: 'https://www.educaplay.com/game/11373002-crucigrama.html',
-        title: 'Completa el Crucigrama 🤔',
-        gameDescription: 'Este juego abarca las unidades: Unidad 2, Unidad 5'
+        title: 'Completa el crucigrama con lo aprendido en la unidad 3 y 4 🤔',
     },
     {
         id: 'juegos',
@@ -282,7 +280,6 @@ export const routes: Routes[] = [
         name: 'Juego de Memoria',
         topics: [],
         url: 'https://www.educaplay.com/game/11377685-juego_de_memoria.html',
-        title: '¿Tienes Buena Memoria? 🧠',
-        gameDescription: 'Este juego abarca las unidades: Unidad 1, Unidad 2, Unidad 3, Unidad 6'
+        title: '¿Tienes Buena Memoria? Relaciona las imágenes con su respectiva imagen acerca de la unidad 5 y 6 🧠',
     },
 ]

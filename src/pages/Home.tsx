@@ -13,22 +13,6 @@ export const Home = () => {
           className="mt-5 rounded w-4/5 lg:w-[60%] flex flex-col lg:flex-row hover:scale-110 transition-all duration-300 cursor-pointer"
           onClick={() => { window.open('https://new.edmodo.com/joincg/ir8ysf', '_blank')?.focus(); }}
         >
-          <div className="border-sky-600 border-8 p-4 lg:border-r-0 basis-1/4 rounded-l flex justify-center">
-            {/* <img src="./edmodo.png" alt="Edmodo" /> */}
-            <img
-              className="h-[8rem] w-[15rem]"
-              src="glosario.png"
-              alt="Glosario"
-            />
-          </div>
-
-          <p className="bg-sky-600 text-white p-5 text-lg rounded-r basis-3/4">Encuentra la definicion de las palabras que desconoces en nuestro glosario.​</p>
-        </div>
-
-        <div
-          className="rounded w-4/5 lg:w-[60%] flex flex-col lg:flex-row hover:scale-110 transition-all duration-300 cursor-pointer"
-          onClick={() => { window.open('https://new.edmodo.com/joincg/ir8ysf', '_blank')?.focus(); }}
-        >
           <div className="border-cyan-600 border-8 p-4 lg:border-r-0 basis-1/4 rounded-l flex justify-center">
             <img src="./edmodo.png" alt="Edmodo" />
           </div>
@@ -38,7 +22,7 @@ export const Home = () => {
           </p>
         </div>
 
-        <div className="flex gap-5 flex-wrap w-4/5 md:w-auto justify-center  mx-auto container mb-10">
+        <div className="flex gap-5 flex-wrap w-4/5 md:w-auto justify-center  mx-auto container">
           <div
             className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer"
             onClick={() => window.open('https://quizizz.com/join/quiz/620c5e54351b6f001e3423e9/start?studentShare=true', '_blank')?.focus()}
@@ -124,6 +108,24 @@ export const Home = () => {
 
             <p className="bg-sky-600 text-white p-5 text-lg basis-4/5 rounded-b">Encuentra la definicion de las palabras que desconoces en nuestro glosario.​</p>
           </div> */}
+        </div>
+
+        <div
+          className="rounded w-4/5 lg:w-[60%] flex flex-col lg:flex-row hover:scale-110 transition-all duration-300 cursor-pointer"
+          onClick={() => {
+            navigate('/glosario');
+          }}
+        >
+          <div className="border-sky-600 border-8 p-4 lg:border-r-0 basis-1/4 rounded-l flex justify-center">
+            {/* <img src="./edmodo.png" alt="Edmodo" /> */}
+            <img
+              className="h-[8rem] w-[15rem]"
+              src="glosario.png"
+              alt="Glosario"
+            />
+          </div>
+
+          <p className="bg-sky-600 text-white p-5 text-lg rounded-r basis-3/4">Encuentra la definicion de las palabras que desconoces en nuestro glosario.​</p>
         </div>
       </div>
     </>
