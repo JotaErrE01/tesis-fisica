@@ -30,6 +30,7 @@ interface Routes {
     topics: Topics[];
     url: string | null;
     title?: string;
+    gameDescription?: string;
 }
 
 export interface ComponentProps {
@@ -37,6 +38,7 @@ export interface ComponentProps {
     mainTopic?: string;
     url: string | null;
     title?: string;
+    gameDescription?: string;
 }
 
 export interface Topics {
@@ -206,14 +208,34 @@ export const routes: Routes[] = [
         to: "/videos/1",
         Component: VideosComponent,
         topics: [],
+        name: 'Unidad 1',
+        title: 'Movimiento Perpendicular',
+        url: 'https://www.youtube.com/embed/bvS9PddKViA'
+    },
+    {
+        id: 'videos',
+        path: 'videos/2',
+        to: "/videos/2",
+        Component: VideosComponent,
+        topics: [],
         name: 'Unidad 2',
         title: 'Tipos de Fuerza',
         url: 'https://www.youtube.com/embed/CDCNIL0Ozcg'
     },
     {
         id: 'videos',
-        path: 'videos/2',
-        to: "/videos/2",
+        path: 'videos/3',
+        to: "/videos/3",
+        Component: VideosComponent,
+        topics: [],
+        name: 'Unidad 3',
+        title: 'Energía Potencial',
+        url: 'https://www.youtube.com/embed/KLn7Imldnww'
+    },
+    {
+        id: 'videos',
+        path: 'videos/4',
+        to: "/videos/4",
         Component: VideosComponent,
         topics: [],
         name: 'Unidad 4',
@@ -222,8 +244,8 @@ export const routes: Routes[] = [
     },
     {
         id: 'videos',
-        path: 'videos/3',
-        to: "/videos/3",
+        path: 'videos/6',
+        to: "/videos/6",
         Component: VideosComponent,
         topics: [],
         name: 'Unidad 6',
@@ -238,7 +260,8 @@ export const routes: Routes[] = [
         name: 'Froggy Saltarín',
         topics: [],
         url: 'https://www.educaplay.com/game/11353591-fisica_quiz.html',
-        title: 'Ayuda a Froggy a Cruzar a Salvo 🐸'
+        title: 'Ayuda a Froggy a Cruzar a Salvo 🐸',
+        gameDescription: 'Este juego abarca las unidades: Unidad 1, Unidad 3, Unidad 4, Unidad 5'
     },
     {
         id: 'juegos',
@@ -248,7 +271,8 @@ export const routes: Routes[] = [
         name: 'Crucigrama',
         topics: [],
         url: 'https://www.educaplay.com/game/11373002-crucigrama.html',
-        title: 'Completa el Crucigrama 🤔'
+        title: 'Completa el Crucigrama 🤔',
+        gameDescription: 'Este juego abarca las unidades: Unidad 2, Unidad 5'
     },
     {
         id: 'juegos',
@@ -258,6 +282,7 @@ export const routes: Routes[] = [
         name: 'Juego de Memoria',
         topics: [],
         url: 'https://www.educaplay.com/game/11377685-juego_de_memoria.html',
-        title: '¿Tienes Buena Memoria? 🧠'
+        title: '¿Tienes Buena Memoria? 🧠',
+        gameDescription: 'Este juego abarca las unidades: Unidad 1, Unidad 2, Unidad 3, Unidad 6'
     },
 ]
