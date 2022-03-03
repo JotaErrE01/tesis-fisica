@@ -10,8 +10,8 @@ function DashboardRoutes() {
       <NavigationLayout />
       <Routes>
         {
-          routes.map(({ path, Component, topics, url, title, mainTopic, gameDescription }) => (
-            <Route key={path} path={path} element={<Component topics={topics} url={url} title={title} mainTopic={mainTopic} gameDescription={gameDescription} />} />
+          routes.map(({ path, Component, topics, url, title, mainTopic }) => (
+            <Route key={path} path={path} element={<Component topics={topics} url={url} title={title} mainTopic={mainTopic} />} />
           ))
         }
         <Route path="glosario" element={<Glosario />} />
