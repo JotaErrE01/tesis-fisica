@@ -259,7 +259,7 @@ export const routes: Routes[] = [
         Component: JuegosComponent,
         name: 'Froggy Saltarín',
         topics: [],
-        url: 'https://www.educaplay.com/game/11353591-fisica_quiz.html',
+        url: 'https://es.educaplay.com/juego/11600813-fisica_quiz.html',
         title: 'Ayuda a Froggy a cruzar a salvo con lo aprendido en la unidad 1 y 2 🐸',
     },
     {
@@ -269,7 +269,7 @@ export const routes: Routes[] = [
         Component: JuegosComponent,
         name: 'Crucigrama',
         topics: [],
-        url: 'https://www.educaplay.com/game/11373002-crucigrama.html',
+        url: 'https://www.educaplay.com/game/11601253-crucigrama.html',
         title: 'Completa el crucigrama con lo aprendido en la unidad 3 y 4 🤔',
     },
     {
@@ -279,7 +279,7 @@ export const routes: Routes[] = [
         Component: JuegosComponent,
         name: 'Juego de Memoria',
         topics: [],
-        url: 'https://www.educaplay.com/game/11377685-juego_de_memoria.html',
+        url: 'https://www.educaplay.com/game/11601316-juego_de_memoria.html',
         title: '¿Tienes Buena Memoria? Relaciona las imágenes con su respectiva imagen acerca de la unidad 5 y 6 🧠',
     },
 ]
