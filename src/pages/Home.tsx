@@ -89,8 +89,6 @@ export const Home = () => {
             </div>
 
             <p className="bg-green-600 text-white p-5 text-lg basis-4/5 rounded-b">Calcuvio es una herramienta gratuita diseñada para el calculo de ejercicios de movimiento rectilíneo uniforme y movimiento rectilineo uniformemente variado.
-              <br />
-              <span className='font-bold'>Iniciar autoevaluación perteneciente a la unidad #5 y #6</span>
             </p>
           </div>
 
