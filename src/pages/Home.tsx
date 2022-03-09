@@ -77,22 +77,24 @@ export const Home = () => {
             </p>
           </div>
 
-          {/* <div className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer">
+          <div className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer"
+            onClick={() => window.open('https://www.calcuvio.com/movimiento-rectilineo', '_blank')?.focus()}
+          >
             <div className="border-green-600 border-8 border-b-0 p-4 rounded-t flex justify-center">
               <img
                 className="h-[8rem]"
-                src="./Google-lens.svg"
-                alt="Quizizz"
+                src="./calcuvio.png"
+                alt="Calcuvio"
               />
             </div>
 
-            <p className="bg-green-600 text-white p-5 text-lg basis-4/5 rounded-b">Google Lens es una aplicación móvil de reconocimiento de imagen desarrollada por Google. Anunciada por primera vez durante el Google I/O 2017, está diseñada para mostrar información relevante usando análisis visual.
+            <p className="bg-green-600 text-white p-5 text-lg basis-4/5 rounded-b">Calcuvio es una herramienta gratuita diseñada para el calculo de ejercicios de movimiento rectilíneo uniforme y movimiento rectilineo uniformemente variado.
               <br />
               <span className='font-bold'>Iniciar autoevaluación perteneciente a la unidad #5 y #6</span>
             </p>
-          </div> */}
+          </div>
 
-          {/* <div
+          <div
             className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer"
             onClick={() => {
               navigate('/glosario');
@@ -107,15 +109,14 @@ export const Home = () => {
             </div>
 
             <p className="bg-sky-600 text-white p-5 text-lg basis-4/5 rounded-b">Encuentra la definicion de las palabras que desconoces en nuestro glosario.​</p>
-          </div> */}
-          <div
+          </div>
+          {/* <div
             className="rounded w-[20rem] lg:w-[60%] flex flex-col lg:flex-row hover:scale-110 transition-all duration-300 cursor-pointer"
             onClick={() => {
               navigate('/glosario');
             }}
           >
             <div className="border-sky-600 border-8 p-4 lg:border-r-0 basis-1/4 rounded-l flex justify-center">
-              {/* <img src="./edmodo.png" alt="Edmodo" /> */}
               <img
                 className="h-[8rem] w-[15rem]"
                 src="glosario.png"
@@ -124,7 +125,7 @@ export const Home = () => {
             </div>
 
             <p className="bg-sky-600 text-white p-5 text-lg rounded-r basis-3/4">Encuentra la definicion de las palabras que desconoces en nuestro glosario.​</p>
-          </div>
+          </div> */}
         </div>
 
       </div>
