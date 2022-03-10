@@ -31,6 +31,8 @@ interface Routes {
     url: string | null;
     title?: string;
     gameDescription?: string;
+    title2?: string;
+    url2?: string;
 }
 
 export interface ComponentProps {
@@ -38,6 +40,8 @@ export interface ComponentProps {
     mainTopic?: string;
     url: string | null;
     title?: string;
+    title2?: string;
+    url2?: string;
     // gameDescription?: string;
 }
 
@@ -241,6 +245,18 @@ export const routes: Routes[] = [
         name: 'Unidad 4',
         title: 'Dilatación Térmica',
         url: 'https://www.youtube.com/embed/CZSQZNyREU8'
+    },
+    {
+        id: 'videos',
+        path: 'videos/5',
+        to: "/videos/5",
+        Component: VideosComponent,
+        topics: [],
+        name: 'Unidad 5',
+        title: 'Energia Eléctrica',
+        url: 'https://www.youtube.com/embed/f5_r_qKADRU',
+        title2: 'Ley de OHM',
+        url2: 'https://www.youtube.com/embed/7VuJgd060jA'
     },
     {
         id: 'videos',

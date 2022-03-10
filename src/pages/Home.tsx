@@ -19,6 +19,8 @@ export const Home = () => {
 
           <p className="bg-cyan-600 text-white p-5 text-lg rounded-r basis-3/4">Edmodo es una plataforma tecnológica, social, educativa y gratuita que permite la comunicación entre los alumnos y los profesores en un entorno cerrado y privado a modo de microblogging, creado para un uso específico en educación media superior. <br />
             <span className='font-bold'>Aula de clases virtual perteneciente a la asignatura de física.</span>
+            <br />
+            <span className='font-bold'>Código: ir8ysf</span>
           </p>
         </div>
 
