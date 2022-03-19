@@ -27,7 +27,7 @@ export const Home = () => {
         <div className="flex gap-5 flex-wrap w-4/5 md:w-auto justify-center  mx-auto container">
           <div
             className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer"
-            onClick={() => window.open('https://quizizz.com/join/quiz/620c5e54351b6f001e3423e9/start?studentShare=true', '_blank')?.focus()}
+            onClick={() => window.open('https://quizizz.com/join/quiz/62354506337613001d807aad/start?studentShare=true', '_blank')?.focus()}
           >
             <div className="border-amber-600 border-8 border-b-0 p-4 rounded-t flex justify-center">
               <img
@@ -45,7 +45,7 @@ export const Home = () => {
 
           <div
             className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer"
-            onClick={() => window.open('https://kahoot.it/challenge/05430138?challenge-id=932bcb07-5ede-4d4e-a16d-d911215a7775_1645067502156', '_blank')?.focus()}
+            onClick={() => window.open('https://kahoot.it/challenge/07301602?challenge-id=3c0ed67c-bde2-414f-9f81-fd0cde30a4fc_1647727623631', '_blank')?.focus()}
           >
             <div className="border-purple-600 border-8 border-b-0 p-4 rounded-t flex justify-center">
               <img
@@ -91,6 +91,21 @@ export const Home = () => {
             </div>
 
             <p className="bg-green-600 text-white p-5 text-lg basis-4/5 rounded-b">Calcuvio es una herramienta gratuita diseñada para el calculo de ejercicios de movimiento rectilíneo uniforme y movimiento rectilineo uniformemente variado.
+            </p>
+          </div>
+
+          <div className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer"
+            onClick={() => window.open('https://po4h36.wixsite.com/laboratoriovirtual/blank-11', '_blank')?.focus()}
+          >
+            <div className="border-yellow-600 border-8 border-b-0 p-4 rounded-t flex justify-center">
+              <img
+                className="h-[8rem]"
+                src="./lastResource.png"
+                alt="Calcuvio"
+              />
+            </div>
+
+            <p className="bg-yellow-600 text-white p-5 text-lg basis-4/5 rounded-b">Pagina web "Laboratorio virtual" elaboradora por el MSc. Salvador Hurtado Fernández  " donde encontraremos temas y recursos de bachillerato.
             </p>
           </div>
 
