@@ -33,7 +33,6 @@ interface Routes {
     gameDescription?: string;
     title2?: string;
     url2?: string;
-    img?: string;
 }
 
 export interface ComponentProps {
@@ -44,7 +43,6 @@ export interface ComponentProps {
     title2?: string;
     url2?: string;
     img?: string;
-    // gameDescription?: string;
 }
 
 export interface Topics {
@@ -72,7 +70,6 @@ export const routes: Routes[] = [
         name: 'Unidad 1',
         mainTopic: 'El Movimiento',
         url: null,
-        img: 'https://dam.muyinteresante.com.mx/wp-content/uploads/2019/05/football-2778583_1920-770x513.jpg',
         topics: [
             {
                 topic: 'Composicion de Movimiento Perpendiculares',

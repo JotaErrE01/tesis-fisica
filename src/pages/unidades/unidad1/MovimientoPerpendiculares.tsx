@@ -1,6 +1,11 @@
 export const MovimientoPerpendiculares = () => {
   return (
     <div>
+      <div className="mb-10">
+        <img className="mx-auto rounded shadow-gray-500 shadow-md" src="https://www.lifeder.com/wp-content/uploads/2018/03/oscilaci%C3%B3n-de-p%C3%A9ndulo.gif" alt="Movimiento Perpendicular" />
+        <p className="text-justify mx-auto w-fit">Autor: Lifeder</p>
+      </div>
+
       <h1 className="font-bold text-2xl text-center mb-10">Movimiento Perpendicular</h1>
 
       <div
@@ -20,6 +25,7 @@ export const MovimientoPerpendiculares = () => {
       </div>
 
       <img src="/fisicaSimplificada.png" alt="Fisica Imagen" />
+      <p className="center">Autor: Libro de 2do Bachillerato Física</p>
     </div>
   )
 };

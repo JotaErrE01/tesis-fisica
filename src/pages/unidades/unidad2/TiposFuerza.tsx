@@ -4,6 +4,9 @@
 export const TiposFuerza = () => {
   return (
     <div>
+      <img className="mx-auto w-1/3 rounded shadow-gray-500 shadow-md" src="https://media.giphy.com/media/v6qWqtE2KRvkQ/giphy.gif" alt="Movimiento Perpendicular" />
+      <p className="text-center mb-10">Autor: GIPHY</p>
+
       <h1 className="font-bold text-2xl text-center mb-10">Tipos Fuerza</h1>
 
       <div className="leading-loose">
@@ -55,6 +58,7 @@ export const TiposFuerza = () => {
       </div>
 
       <img src="https://www.enterarse.com/img-grficos_enterarse_-_2020-01-30t094657.416-20200130095005.png" alt="" className="mb-5 rounded lg:w-4/5 mx-auto" />
+      <p className="text-center">Autor: Libro de 2do Bachillerato Física</p>
     </div>
   )
 };

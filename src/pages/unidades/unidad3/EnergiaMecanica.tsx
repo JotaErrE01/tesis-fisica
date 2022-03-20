@@ -4,6 +4,9 @@
 export const EnergiaMecanica = () => {
   return (
     <div>
+      <img className="mx-auto rounded shadow-gray-500 h-[20rem] shadow-md" src="https://museovirtual.csic.es/salas/vida/swf/E_potencial_en_E_cinetica.gif" alt="Movimiento Perpendicular" />
+      <p className="text-center mb-10">Autor: Museo Virtual</p>
+
       <h1 className="font-bold text-2xl text-center mb-10">Energía Mecánica</h1>
 
       <div className="leading-loose">
@@ -17,6 +20,7 @@ export const EnergiaMecanica = () => {
 
             <div className="w-5/4 lg:w-2/5 mx-auto my-5">
               <img className="w-full rounded mx-auto md:w-2/5 lg:w-auto" src="https://www.electrontools.com/Home/WP/wp-content/uploads/2018/11/asd-1024x654.jpg" alt="Energia Mecanica" />
+              <p className="text-center mb-10">Autor: Electroontools</p>
             </div>
 
             <p>

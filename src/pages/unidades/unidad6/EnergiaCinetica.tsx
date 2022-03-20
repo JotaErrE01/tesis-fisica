@@ -4,6 +4,9 @@
 export const EnergiaCinetica = () => {
   return (
     <div>
+      <img className="mx-auto mb-5 rounded shadow-gray-500 h-[20rem] shadow-md" src="http://uapas2.bunam.unam.mx/mtm/energia_calorifica/images/imagen1.gif" alt="Movimiento Perpendicular" />
+      <p className="text-center mb-10">Autor: Uapas2</p>
+
       <h1 className="font-bold text-2xl text-center mb-10">Energía Cinética</h1>
 
       <div className="leading-loose">
@@ -15,6 +18,7 @@ export const EnergiaCinetica = () => {
 
             <div className="my-5 w-full">
               <img className="rounded mx-auto lg:w-2/5" src="/energiaCinetica.png" alt="Corriente" />
+              <p className="text-center mb-10">Autor: Libro de 2do Bachillerato Física</p>
             </div>
 
             <p>

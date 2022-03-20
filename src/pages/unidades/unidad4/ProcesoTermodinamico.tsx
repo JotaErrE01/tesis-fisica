@@ -5,6 +5,9 @@ export const ProcesoTermodinamico = () => {
 
   return (
     <div>
+      <img className="mx-auto mb-5 rounded shadow-gray-500 h-[20rem] shadow-md" src="https://www2.montes.upm.es/dptos/digfa/cfisica/termo1p/primerpisot_files/isoterma.gif" alt="Movimiento Perpendicular" />
+      <p className="text-center mb-10">Autor: Montes</p>
+
       <h1 className="font-bold text-2xl text-center mb-10">Espontaneidad Proceso Termodinamico</h1>
 
       <div className="leading-loose">
@@ -21,6 +24,7 @@ export const ProcesoTermodinamico = () => {
 
               <div className="mb-5 lg:flex-[40%] lg:my-0">
                 <img className="w-full rounded mx-auto md:w-2/5 lg:w-auto" src="https://enfisica.com/wp-content/uploads/Temodin%C3%A1mica-leyes-y-procesos-e1595356305479.jpg" alt="Energia Mecanica" />
+                <p className="text-center mb-10">Autor: Enfisica</p>
               </div>
             </div>
 
@@ -42,6 +46,7 @@ export const ProcesoTermodinamico = () => {
 
               <div className="my-5 lg:my-0">
                 <img className="mx-auto" src={entropiaIMG} alt="Entropia" />
+                <p className="text-center mb-10">Autor: Libro de 2do Bachillerato Física</p>
               </div>
 
 

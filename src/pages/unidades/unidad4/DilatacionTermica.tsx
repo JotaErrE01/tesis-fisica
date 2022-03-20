@@ -7,6 +7,9 @@ import formulaIMG from '../../../images/formulaDilatacion.png';
 export const DilatacionTermica = () => {
   return (
     <div>
+      <img className="mx-auto rounded shadow-gray-500 h-[20rem] shadow-md" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Charles_and_Gay-Lussac%27s_Law_animated.gif/220px-Charles_and_Gay-Lussac%27s_Law_animated.gif" alt="Movimiento Perpendicular" />
+      <p className="text-center mb-10">Autor: Wikimedia</p>
+
       <h1 className="font-bold text-2xl text-center mb-10">Dilatación Térmica</h1>
 
       <div className="leading-loose">
@@ -18,6 +21,7 @@ export const DilatacionTermica = () => {
 
             <div className="lg:w-4/5 mx-auto my-5">
               <img className="rounded mx-auto lg:w-auto" src={dilatacionIMG} alt="Dilatacion" />
+              <p className="text-center mb-10">Autor: Libro de 2do Bachillerato Física</p>
             </div>
 
             <p>
@@ -31,6 +35,7 @@ export const DilatacionTermica = () => {
 
             <div className="lg:w-4/5 mx-auto my-5">
               <img className="rounded mx-auto lg:w-auto" src={cuadroIMG} alt="Dilatacion" />
+              <p className="text-center mb-10">Autor: Libro de 2do Bachillerato Física</p>
             </div>
           </div>
         </div>

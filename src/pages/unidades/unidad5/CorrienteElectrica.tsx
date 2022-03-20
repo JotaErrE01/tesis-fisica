@@ -5,6 +5,9 @@ import intensidadIMG from '../../../images/corrienteIntensidad.png';
 export const CorrienteElectrica = () => {
   return (
     <div>
+      <img className="mx-auto mb-5 rounded shadow-gray-500 h-[20rem] shadow-md" src="https://i.pinimg.com/originals/12/d6/1a/12d61ad8fd8344609ad9d5caee99dc1b.gif" alt="Movimiento Perpendicular" />
+      <p className="text-center mb-10">Autor: Pinimg</p>
+
       <h1 className="font-bold text-2xl text-center mb-10">Corriente Eléctrica</h1>
 
       <div className="leading-loose">
@@ -17,10 +20,12 @@ export const CorrienteElectrica = () => {
             <div className="my-10 flex w-4/5 mx-auto gap-20 lg:flex-row flex-col items-center">
               <div className="basis-2/">
                 <img className="rounded" src={corrienteIMG} alt="Corriente" />
+                <p className="text-center mb-10">Autor: Libro de 2do Bachillerato Física</p>
               </div>
 
               <div className="basis-2/4">
                 <img src={intensidadIMG} alt="Intensidad" />
+                <p className="text-center mb-10">Autor: Libro de 2do Bachillerato Física</p>
               </div>
             </div>
 
@@ -30,6 +35,7 @@ export const CorrienteElectrica = () => {
             </p>
 
             <img className="mx-auto my-5" src="https://soloformulas.com/wp-content/uploads/2015/03/intensidadcorriente_thumb.jpg" alt="" />
+            <p className="text-center mb-10">Autor: Soloformulas</p>
           </div>
         </div>
       </div>

@@ -3,6 +3,9 @@
 export const EnergiaPotencial = () => {
   return (
     <div>
+      <img className="mx-auto rounded shadow-gray-500 h-[20rem] shadow-md" src="https://bachilleratovirtual.com/aula/pluginfile.php/7568/mod_lesson/page_contents/3219/conser.gif" alt="Movimiento Perpendicular" />
+      <p className="text-center mb-10">Autor: Bachillerato Virtual</p>
+
       <h1 className="font-bold text-2xl text-center mb-10">Energía Potencial</h1>
 
       <div className="leading-loose">
@@ -14,6 +17,7 @@ export const EnergiaPotencial = () => {
 
             <div className="w-5/4 lg:w-2/5 mx-auto my-5">
               <img className="w-full rounded mx-auto md:w-2/5 lg:w-auto" src="https://i0.wp.com/www.elgencurioso.com/wp-content/uploads/2021/10/ejemplos-energia-potencial.png?fit=1500%2C1000&ssl=1" alt="Energia Potencial" />
+              <p className="text-center mb-10">Autor: El Gen Curioso</p>
             </div>
 
             <p>

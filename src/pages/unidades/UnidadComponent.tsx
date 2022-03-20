@@ -4,7 +4,7 @@ import { ComponentProps } from '../../routes/routes';
 import { Fragment } from 'react';
 
 
-export const UnidadComponent = ({ topics, mainTopic, img }: ComponentProps) => {
+export const UnidadComponent = ({ topics, mainTopic }: ComponentProps) => {
 
   return (
     <>
@@ -14,11 +14,9 @@ export const UnidadComponent = ({ topics, mainTopic, img }: ComponentProps) => {
       <div
         className="mx-auto container mt-10 px-5 flex overflow-hidden gap-5"
       >
-        <div>
-          {
-            img &&
-            <img className='rounded shodow shadow-gray-500 shadow-md w-1/2 mx-auto mb-5' src={img} />
-          }
+        <div
+          className="text-justify"
+        >
           <Routes>
             {
               topics.map(({ path, Component }) => (

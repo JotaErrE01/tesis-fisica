@@ -3,6 +3,9 @@
 export const InteraccionContacto = () => {
   return (
     <div>
+      <img className="mx-auto rounded shadow-gray-500 shadow-md" src="https://2.bp.blogspot.com/-TNgOC8h1LdQ/VxtswCUFYtI/AAAAAAAAAtY/Tq0Fp6hsbe8e_9ovxJ6yKWPPm7fftm8vgCLcB/s400/Efecto%2Bdin%25C3%25A1mico%2Bde%2Bla%2Bfuerza.jpg" alt="Movimiento Perpendicular" />
+      <p className="text-center mb-10">Autor: GIPHY</p>
+
       <h1 className="font-bold text-2xl text-center mb-10">Interacciones de Contacto</h1>
 
       <div className="leading-loose">
@@ -15,6 +18,7 @@ export const InteraccionContacto = () => {
 
           <div className="flex-[30%] mb-5">
             <img className="md:h-[15rem] h-auto mx-auto" src='/interaccionContacto.png' alt="Interacciones de Contacto" />
+            <p className="text-center mb-10">Autor: Libro de 2do Bachillerato Física</p>
           </div>
 
         </div>

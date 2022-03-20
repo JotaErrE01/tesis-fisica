@@ -4,6 +4,10 @@ import mvCirular from '../../../images/movimientoCircular.png';
 export const MovimientoCircular = () => {
   return (
     <div>
+      <img className="mx-auto w-1/2 rounded shadow-gray-500 shadow-md" src="https://storage.googleapis.com/portaleducativo-net-class-g3p6/biblioteca/contenidos/200624201675.gif" alt="Movimiento Perpendicular" />
+      <p className='mb-10 text-center'>Autor: Google Apis</p>
+
+
       <h1 className="font-bold text-2xl text-center mb-10">Movimiento Circular</h1>
 
       <div className="leading-loose mb-5">
@@ -16,6 +20,7 @@ export const MovimientoCircular = () => {
         </p>
 
         <img src={mvCirular} alt="movimiento-circular-graph" />
+        <p className="center mb-10">Autor: Libro de 2do Bachillerato Física</p>
 
         <p>
           Como consecuencia de su trayectoria circular y velocidad angular constante, el MCU tiene carácter periódico: se repite con regularidad en el tiempo. Por ello, podemos definir las magnitudes período y frecuencia:

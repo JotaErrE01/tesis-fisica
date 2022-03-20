@@ -21,6 +21,7 @@ export const MRUPerpendicular = () => {
 
           <div className="flex-auto">
             <img className="w-full rounded mx-auto md:w-2/5 lg:w-auto" src="https://aulaenred.ibercaja.es/wp-content/uploads/cinematica2_3_1.png" alt="" />
+            <p className="center">Autor: Libro de 2do Bachillerato Física</p>
           </div>
         </div>
 

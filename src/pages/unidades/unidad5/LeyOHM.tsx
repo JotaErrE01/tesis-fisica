@@ -7,6 +7,9 @@ import circuitoIMG from '/src/images/cicuito.jpg';
 export const LeyOHM = () => {
   return (
     <div>
+      <img className="mx-auto rounded shadow-gray-500 h-[20rem] shadow-md" src="https://pybonacci.es/wp-content/uploads/2021/09/que-dice-la-ley-de-ohm.gif" alt="Movimiento Perpendicular" />
+      <p className="text-center mb-10">Autor: Pybonacci</p>
+
       <h1 className="font-bold text-2xl text-center mb-10">Ley de OHM</h1>
 
       <div className="leading-loose">
@@ -17,6 +20,7 @@ export const LeyOHM = () => {
             </p>
 
             <img className="w-4/5 mx-auto my-5 rounded" src={ohmIMG} alt="Corriente" />
+            <p className="text-center mb-10">Autor: Libro de 2do Bachillerato Física</p>
 
             <p>
               Con esta expresión vas a ser capaz de calcular en un circuito una magnitud a partir de las otras dos. Para calcular la intensidad calculamos directamente la fracción anterior.
@@ -24,18 +28,21 @@ export const LeyOHM = () => {
             </p>
 
             <img className="mx-auto my-5" src={voltajeIMG} alt="voltaje" />
+            <p className="text-center mb-10">Autor: Libro de 2do Bachillerato Física</p>
 
             <p>
               Ahora, si queremos calcular R, en la expresión anterior pasamos la I que está multiplicando al otro lado de la igualdad dividiendo, aislando así R. Nos queda:
             </p>
 
             <img className="mx-auto my-5" src={resistenciaIMG} alt="resistencia" />
+            <p className="text-center mb-10">Autor: Libro de 2do Bachillerato Física</p>
 
             <p>
               Si se conocen dos de estos valores, los técnicos pueden reconfigurar la ley de Ohm para calcular el tercero. Simplemente, se debe modificar la pirámide de la siguiente manera:
             </p>
 
             <img className="mx-auto my-5" src={formulaIMG} alt="formula general" />
+            <p className="text-center mb-10">Autor: Libro de 2do Bachillerato Física</p>
 
 
             <p>
@@ -44,6 +51,7 @@ export const LeyOHM = () => {
             </p>
 
             <img className="mx-auto" src={circuitoIMG} alt="circuito" />
+            <p className="text-center mb-10">Autor: Libro de 2do Bachillerato Física</p>
 
             <p>
               I = E/R = 12 V/6 Ω = 2 A

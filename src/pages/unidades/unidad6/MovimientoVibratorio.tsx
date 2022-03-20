@@ -4,6 +4,9 @@ import formulaIMG from '/src/images/formulaPeriodico.gif';
 export const MovimientoVibratorio = () => {
   return (
     <div>
+      <img className="mx-auto rounded shadow-gray-500 h-[20rem] shadow-md" src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Simple_Harmonic_Motion_Orbit.gif" alt="Movimiento Perpendicular" />
+      <p className="text-center mb-10">Autor: Wikimedia</p>
+
       <h1 className="font-bold text-2xl text-center mb-10">Movimiento Periódico</h1>
 
       <div className="leading-loose">
@@ -17,11 +20,12 @@ export const MovimientoVibratorio = () => {
           </div>
 
           <div className="basis-2/5">
-            <img className="rounded my-5 lg:my-0 h-full" src="/mvPerpendicular.png" alt="Corriente" />
+            <img className="rounded mt-5 lg:my-0 h-full" src="/mvPerpendicular.png" alt="Corriente" />
+            <p className="text-center mb-10">Autor: Libro de 2do Bachillerato Física</p>
           </div>
         </div>
 
-        <h3 className="font-bold text-2xl text-center mb-5">Movimiento Oscilatorio Vibratorio</h3>
+        <h3 className="font-bold text-2xl text-center mb-5 mt-10">Movimiento Oscilatorio Vibratorio</h3>
         <div className="mb-5">
           <div>
             <p>
