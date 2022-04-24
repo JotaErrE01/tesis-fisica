@@ -45,7 +45,7 @@ export const Home = () => {
 
           <div
             className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer"
-            onClick={() => window.open('https://kahoot.it/challenge/07301602?challenge-id=3c0ed67c-bde2-414f-9f81-fd0cde30a4fc_1647727623631', '_blank')?.focus()}
+            onClick={() => window.open('https://kahoot.it/challenge/04208054?challenge-id=932bcb07-5ede-4d4e-a16d-d911215a7775_1650667970249', '_blank')?.focus()}
           >
             <div className="border-purple-600 border-8 border-b-0 p-4 rounded-t flex justify-center">
               <img
@@ -63,7 +63,7 @@ export const Home = () => {
 
           <div
             className="md:w-[20rem] flex flex-col hover:scale-105 transition-all duration-300 cursor-pointer"
-            onClick={() => window.open('https://b.socrative.com/teacher/#import-quiz/64635563', '_blank')?.focus()}
+            onClick={() => window.open('https://b.socrative.com/login/student/?feature=embed', '_blank')?.focus()}
           >
             <div className="border-orange-600 border-8 border-b-0 p-4 rounded-t flex justify-center">
               <img
@@ -76,6 +76,11 @@ export const Home = () => {
             <p className="bg-orange-600 text-white p-5 text-lg basis-4/5 rounded-b">Socrative es una herramienta multimedia que permite crear encuestas y cuestionarios conociendo la respuesta de los alumnos en tiempo real a través de los ordenadores.
               <br />
               <span className='font-bold'>Iniciar autoevaluación perteneciente a la unidad #5 y #6</span>
+              <br />
+              <p>
+                Nombre de Aula: <span className='font-bold text-base'>PAMELA6081</span>
+              </p>
+              <p>Ingresar con el nombre del estudiante</p>
             </p>
           </div>
 
